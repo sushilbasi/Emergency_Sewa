@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context=".activity_home">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <Button
+            android:id="@+id/btn_ambulance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/ic_left_ebutton"
+            android:drawableLeft="@drawable/ic_ambulance_icon"
+            android:padding="10dp"
+            android:text="Ambulance"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:stateListAnimator="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_quick_ambulance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_right_ebutton"
+            android:drawableStart="@drawable/ic_alert_icon"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btn_ambulance"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_firebrigade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ic_left_ebutton"
+            android:drawableLeft="@drawable/ic_fire_brigade_icon"
+            android:padding="10dp"
+            android:text="Fire Brigade"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ambulance" />
+
+        <Button
+            android:id="@+id/btn_quick_firebrigade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_right_ebutton"
+            android:drawableStart="@drawable/ic_alert_icon"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btn_ambulance"
+            app:layout_constraintTop_toBottomOf="@+id/btn_quick_ambulance" />
+
+        <Button
+            android:id="@+id/btn_police"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ic_left_ebutton"
+            android:drawableLeft="@drawable/ic_police_icon"
+            android:padding="10dp"
+            android:text="Police"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_firebrigade" />
+
+        <Button
+            android:id="@+id/btn_quick_police"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_right_ebutton"
+            android:drawableStart="@drawable/ic_alert_icon"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btn_police"
+            app:layout_constraintTop_toBottomOf="@+id/btn_quick_firebrigade" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/ic_alert_icon2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="250dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="8dp"
+            android:text="Press only during Urgent situation"
+            android:textSize="16dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/sub_text_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ic_support"
+            android:drawableStart="@drawable/ic_phone_icon"
+            android:text="Support"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_police" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>
