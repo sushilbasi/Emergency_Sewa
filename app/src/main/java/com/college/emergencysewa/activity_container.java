@@ -54,7 +54,7 @@ public class activity_container extends AppCompatActivity
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setIcon(R.drawable.ic_iconfinder_alarm__alert__light__emergency_2542103);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFE8E8")));
-        actionBar.setTitle(Html.fromHtml("<font color='#FF1515' size='15dp'><b>EMERGENCY</b></font>"));
+        actionBar.setTitle(Html.fromHtml("<font color='#FF1515' size='15dp'><b>EMERGENCY SEWA</b></font>"));
 //        getActionBar().setIcon(R.drawable.ic_iconfinder_alarm__alert__light__emergency_2542103);
 
         //action bar profile button
