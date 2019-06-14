@@ -10,14 +10,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c40d3b8-8149-4f6a-8cd2-704a2c20ee39" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9c40d3b8-8149-4f6a-8cd2-704a2c20ee39" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/" />
@@ -83,7 +76,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/college/emergencysewa/activity_container.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
+            <state relative-caret-position="-436">
               <caret line="56" column="93" selection-start-line="56" selection-start-column="93" selection-end-line="56" selection-end-column="93" />
             </state>
           </provider>
@@ -114,7 +107,6 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -127,7 +119,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/college/emergencysewa/UserDetails.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/college/emergencysewa/PreferencesUtility.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/college/emergencysewa/SaveSharedPreference.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/college/emergencysewa/activity_container.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_reg1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_reg2.xml" />
@@ -157,6 +148,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/college/emergencysewa/edit_profile.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/college/emergencysewa/activity_container.java" />
       </list>
     </option>
   </component>
@@ -172,7 +164,17 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Emergency_sewa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Emergency_sewa" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
@@ -340,7 +342,28 @@
       <option name="project" value="LOCAL" />
       <updated>1560463873215</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <created>1560509945096</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560509945096</updated>
+    </task>
+    <task id="LOCAL-00004" summary="second Commit">
+      <created>1560510070227</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560510070227</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initial Commit">
+      <created>1560510185836</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560510185836</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -356,7 +379,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3295302" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3295302" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -372,7 +395,7 @@
       <window_info anchor="bottom" id="Android Profiler" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="5" />
       <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49932885" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.55369127" side_tool="true" weight="0.4714495" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.55369127" side_tool="true" visible="true" weight="0.4714495" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Build" order="9" sideWeight="0.44697988" visible="true" weight="0.28257686" />
       <window_info anchor="bottom" id="Flutter Performance" order="10" side_tool="true" />
@@ -422,7 +445,9 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="second Commit" />
+    <MESSAGE value="initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial Commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/java/nio/file/Files.java" />
@@ -495,7 +520,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/college/emergencysewa/activity_container.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
+        <state relative-caret-position="-436">
           <caret line="56" column="93" selection-start-line="56" selection-start-column="93" selection-end-line="56" selection-end-column="93" />
         </state>
       </provider>
