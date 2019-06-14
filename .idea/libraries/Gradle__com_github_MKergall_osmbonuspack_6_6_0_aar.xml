@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.MKergall:osmbonuspack:6.6.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/osmbonuspack-6.6.0.aar/b567a72b3f658ab5449ce85d84526378/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/osmbonuspack-6.6.0.aar/b567a72b3f658ab5449ce85d84526378/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/osmbonuspack-6.6.0.aar/2fae664f9fe85728052c8c0423f2f75f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/osmbonuspack-6.6.0.aar/2fae664f9fe85728052c8c0423f2f75f/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
