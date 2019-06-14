@@ -21,6 +21,12 @@ Thumbs.db
 # OSX files
 .DS_Store
 
+*.iws
+.idea/libraries
+.idea/tasks.xml
+.idea/vcs.xml
+.idea/workspace.xml
+
 # Android Studio
 *.iml
 .idea
