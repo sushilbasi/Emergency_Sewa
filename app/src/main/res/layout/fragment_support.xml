@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame_support"
+    tools:context=".support">
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="560dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="right">
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:elevation="10dp"
+                android:background="@drawable/ic_cancel"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Direct Call"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="@color/sub_text_black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your call will be forwarded directly to the control room."
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="@color/sub_text_black" />
+            <Button
+                android:id="@+id/btn_call_ambulance"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/ic_phone_icon"
+                android:text="Ambulance"
+                android:textSize="18dp"
+                android:paddingHorizontal="20dp"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/btn_call_firebrigade"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/ic_phone_icon"
+                android:text="Fire Brigade"
+                android:textSize="18dp"
+                android:paddingHorizontal="20dp"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/btn_call_police"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/ic_phone_icon"
+                android:text="Police"
+                android:textSize="18dp"
+                android:paddingHorizontal="20dp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

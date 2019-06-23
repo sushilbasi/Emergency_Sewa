@@ -2,7 +2,11 @@ package com.college.emergencysewa;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -16,12 +20,14 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.util.AttributeSet;
+import android.util.Base64;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +39,9 @@ public class activity_container extends AppCompatActivity
     private ActionBar actionBar;
     private Button profile;
     FrameLayout frameLayout;
+    ImageView profilepicture;
+
+    SharedPreferences sp1;
 
 
 
@@ -49,6 +58,7 @@ public class activity_container extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_container);
 
+        sp1=this.getSharedPreferences("Request", MODE_PRIVATE);
         // code for action bar
         actionBar =getSupportActionBar();
         actionBar.setDisplayShowHomeEnabled(true);
@@ -103,15 +113,19 @@ public class activity_container extends AppCompatActivity
         {
             case R.id.navigation_home:
                 fragment = new activity_home();
+                ((AppCompatActivity)this).getSupportActionBar().show();
                 break;
             case R.id.navigation_map:
                 fragment = new activity_map();
+                ((AppCompatActivity)this).getSupportActionBar().hide();
                 break;
             case R.id.navigation_message:
                 fragment = new activity_message();
+                ((AppCompatActivity)this).getSupportActionBar().show();
                 break;
             case R.id.navigation_info:
                 fragment = new activity_info();
+                ((AppCompatActivity)this).getSupportActionBar().show();
                 break;
 
         }

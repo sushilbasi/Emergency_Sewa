@@ -34,7 +34,7 @@
                         android:id="@+id/txt_serviceType"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/header_ambulance_request"
+                        android:text="Ticket Information"
                         android:textColor="@color/sub_text_black"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -49,7 +49,7 @@
                         android:id="@+id/txt_msgInfo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/emergency_request_send"
+                        android:text="Your request has been registered! Please have patience while the help arrives!"
                         android:textColor="@color/sub_text_black" />
                 </LinearLayout>
 
@@ -66,7 +66,7 @@
                         android:id="@+id/dis_userId"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="UserId"
+                        android:text="Username"
                         android:ems="8"
                         android:textColor="@color/sub_text_black" />
                     <TextView
@@ -80,7 +80,6 @@
                         android:id="@+id/id_user"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="User4545"
                         android:textColor="@color/sub_text_black" />
                 </LinearLayout>
 
@@ -107,9 +106,9 @@
                         android:textColor="@color/sub_text_black" />
 
                     <TextView
+                        android:id="@+id/id_regtime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="10:45"
                         android:textColor="@color/sub_text_black" />
                 </LinearLayout>
 
@@ -136,9 +135,9 @@
                         android:textColor="@color/sub_text_black" />
 
                     <TextView
+                        android:id="@+id/id_ticketid"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="T4545"
                         android:textColor="@color/sub_text_black" />
                 </LinearLayout>
 
@@ -154,7 +153,7 @@
                         android:id="@+id/dis_agent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Agent"
+                        android:text="Assigned Agent"
                         android:ems="8"
                         android:textColor="@color/sub_text_black" />
                     <TextView
@@ -166,10 +165,9 @@
                         android:textColor="@color/sub_text_black" />
 
                     <TextView
-                        android:id="@+id/id_agent"
+                        android:id="@+id/id_assignedagent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="magent4545"
                         android:textColor="@color/sub_text_black" />
                 </LinearLayout>
 

@@ -23,7 +23,6 @@ public class activity_info extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ((AppCompatActivity)getActivity()).getSupportActionBar().show();
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_activity_info, container, false);
     }

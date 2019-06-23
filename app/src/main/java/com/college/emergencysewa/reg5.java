@@ -95,10 +95,10 @@ public class reg5 extends Fragment implements OnClickListener {
 
         }
 
-        String userJSON(String username, String password, String fname, String mname, String lname, String phone_number,String dob,String email, String assist, String personal_id) {
+        String userJSON(String username, String password, String fname, String mname, String lname, String phone_number,String dob,String email, String assist,String profile_picture, String personal_id) {
             return "{\"username\":\"" + username + "\",\"password\":\"" + password + "\",\"fname\":\""+fname+"\",\"mname\":" +
                     "\""+mname+"\",\"lname\":\""+lname+"\",\"phone_number\":\""+phone_number+"\",\"date_of_birth\":\""+dob+"\"," +
-                    "\"email\":\""+email+"\",\"assist\":\""+assist+"\",\"personal_id\":\""+personal_id+"\"}";
+                    "\"email\":\""+email+"\",\"assist\":\""+assist+"\",\"profile_picture\":\""+profile_picture+"\",\"personal_id\":\""+personal_id+"\"}";
         }
     }
     public void onClick(View v)
@@ -139,12 +139,14 @@ public class reg5 extends Fragment implements OnClickListener {
                 String e_email=sp1.getString("reg_email", null);
                 String e_dob=sp1.getString("reg_dob", null);
                 String e_assist=sp1.getString("reg_assist", null);
+                String e_profile_picture=sp1.getString("reg_profile_picture", null);
                 String e_personal_id=sp1.getString("reg_personal_id", null);
+
 
                 reg_postRequest example = new reg_postRequest();
 
 
-                String json = example.userJSON(e_username,e_password,e_fname,e_mname,e_lname,e_phone_number,e_dob,e_email,e_assist,e_personal_id);
+                String json = example.userJSON(e_username,e_password,e_fname,e_mname,e_lname,e_phone_number,e_dob,e_email,e_assist,e_profile_picture,e_personal_id);
                 System.out.println(json);
                 example.post("http://wagle04.pythonanywhere.com/userregister", json);
 

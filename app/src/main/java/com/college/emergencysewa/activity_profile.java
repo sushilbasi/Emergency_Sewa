@@ -4,6 +4,8 @@ import android.app.ActionBar;
 import android.app.Notification;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
@@ -12,6 +14,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -20,6 +23,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,6 +41,9 @@ public class activity_profile extends AppCompatActivity{
     Button displayImage;
     Button logout;
 
+    ImageView profilepicture;
+
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // This menu let us add Profile icons on the ActionBar
         MenuInflater menuInflater = getMenuInflater();
@@ -44,11 +51,17 @@ public class activity_profile extends AppCompatActivity{
         return super.onCreateOptionsMenu(menu);
     }
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
 
         super.onCreate(savedInstanceState);
+        SharedPreferences sp1=this.getSharedPreferences("Login", MODE_PRIVATE);
+        final SharedPreferences.Editor Ed;
+        Ed=sp1.edit();
         android.support.v7.app.ActionBar actionBar =getSupportActionBar();
         actionBar.setDisplayShowHomeEnabled(true);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFE8E8")));
@@ -64,8 +77,8 @@ public class activity_profile extends AppCompatActivity{
         btn_edit = (TextView) findViewById(R.id.btn_edit);
         displayImage = (Button) findViewById(R.id.btn_displayImage);
         logout = (Button) findViewById(R.id.btn_logout);
+        profilepicture = (ImageView) findViewById(R.id.img_round);
 
-        SharedPreferences sp1=this.getSharedPreferences("Login", MODE_PRIVATE);
         String uname=sp1.getString("username", null);
         String fname=sp1.getString("fname", null)+" "+sp1.getString("mname", null)+" "+sp1.getString("lname", null);
         String dob=sp1.getString("date_of_birth", null);
@@ -73,7 +86,13 @@ public class activity_profile extends AppCompatActivity{
         String phno=sp1.getString("phone_number", null);
         String uassist=sp1.getString("assist", null);
         String peronalid=sp1.getString("personal_id", null);
+        String profile_picture=sp1.getString("profile_picture", null);
 
+        byte[] decodedString = Base64.decode(profile_picture, Base64.DEFAULT);
+        Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+        profilepicture.setImageBitmap(decodedByte);
+
+        username.setTextColor(Color.BLUE);
         username.setText(uname);
         fullname.setText(fname);
         date_of_birth.setText(dob);
@@ -81,12 +100,14 @@ public class activity_profile extends AppCompatActivity{
         phone_number.setText(phno);
         assist.setText(uassist);
 
+
         btn_edit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(activity_profile.this,edit_profile.class));
             }
         });
+
 
         displayImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,7 +119,8 @@ public class activity_profile extends AppCompatActivity{
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Ed.putBoolean("logged_in",false);
+                startActivity(new Intent(activity_profile.this,LoginUser.class));
             }
         });
     }

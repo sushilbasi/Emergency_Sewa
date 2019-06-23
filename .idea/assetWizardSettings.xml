@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_officer" />
-                            <entry key="sourceFile" value="G:\Emergency Sewa Icons\officer.svg" />
+                            <entry key="outputName" value="ic_cancel" />
+                            <entry key="sourceFile" value="G:\Emergency Sewa Icons\cancel.svg" />
                           </map>
                         </option>
                       </PersistentState>

@@ -68,7 +68,7 @@ public class reg3 extends Fragment implements OnClickListener{
                 } else if (!(reg_yes.isChecked()) && !(reg_no.isChecked())) {
                     Toast.makeText(getActivity(), "Check either 'yes' or 'no' ", Toast.LENGTH_LONG).show();
                 } else {
-                    reg5 frag = new reg5();
+                    reg4 frag = new reg4();
                     fragmentManager.beginTransaction().replace(R.id.reg_list, frag).commit();
                 }
 

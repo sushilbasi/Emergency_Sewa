@@ -197,6 +197,7 @@ public class LoginUser extends AppCompatActivity implements OnClickListener {
                         Ed.putString("email",String.valueOf(jsonresponse.get("email")) );
                         Ed.putString("assist",String.valueOf(jsonresponse.get("assist")) );
                         Ed.putString("personal_id",String.valueOf(jsonresponse.get("personal_id")) );
+                        Ed.putString("profile_picture",String.valueOf(jsonresponse.get("profile_picture")) );
                         Ed.putBoolean("logged_in",true);
                     } catch (JSONException e) {
                         e.printStackTrace();

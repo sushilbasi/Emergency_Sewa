@@ -14,7 +14,7 @@
         <item name="colorPrimaryDark">@color/text_red</item>
         <!--<item name="colorAccent">@color/colorAccent</item>-->
         <!--<item name="android:windowAnimationStyle">@null</item>-->
-        <item name="android:textColorPrimary">@color/text_red</item>
+        <!--<item name="android:textColorPrimary">@color/text_red</item>-->
         <!--<item name="android:drawableLeft">@drawable/ic_iconfinder_alarm__alert__light__emergency_2542103</item>-->
 
     </style>
